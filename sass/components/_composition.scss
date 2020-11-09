@@ -3,7 +3,7 @@
 
     &__photo{
         width: 55%;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        box-shadow: $shadow-3 rgba($color-black, .4);
         border-radius: 2px;
         position: absolute;
         z-index: 10;
@@ -28,7 +28,7 @@
         &:hover{
             outline: 1.5rem solid $color-primary;
             transform: scale(1.05) translateY(-.5rem);
-            box-shadow: 0 2.5rem 4rem rgba($color-black, .5); //effect that it's closer=shadow increased
+            box-shadow: $shadow-4 rgba($color-black, .5); //effect that it's closer=shadow increased
             z-index: 20;
         }
     }
