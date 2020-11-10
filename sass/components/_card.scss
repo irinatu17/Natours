@@ -13,7 +13,7 @@
         top: 0;
         left: 0;
         backface-visibility: hidden; //hides the backpart of element
-        border-radius: 3px;
+        border-radius: $default-border-radius;
         overflow: hidden; //to hide overflowing images' corners
         box-shadow: $shadow-3 rgba($color-black, .15);
 
@@ -25,15 +25,18 @@
             transform: rotateY(180deg);
 
             &-1{
-                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+                background-image: linear-gradient(to right bottom, 
+                $color-secondary-light, $color-secondary-dark);
             }
 
             &-2{
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+                background-image: linear-gradient(to right bottom, 
+                $color-primary-light, $color-primary-dark);
             }
 
             &-3{
-                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+                background-image: linear-gradient(to right bottom, 
+                $color-tertiary-light, $color-tertiary-dark);
             }
 
         }
@@ -58,16 +61,22 @@
         border-top-right-radius: 3px;
 
         &--1{
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/nat-5.jpg); 
+            background-image: linear-gradient(to right bottom, 
+                $color-secondary-light, $color-secondary-dark), 
+                url(../img/nat-5.jpg); 
             
         }
 
         &--2{
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/nat-6.jpg);
+            background-image: linear-gradient(to right bottom, 
+                $color-primary-light, $color-primary-dark), 
+                url(../img/nat-6.jpg);
         }
 
         &--3{
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/nat-7.jpg);
+            background-image: linear-gradient(to right bottom, 
+                $color-tertiary-light, $color-tertiary-dark), 
+                url(../img/nat-7.jpg);
         }
     }
 
@@ -151,6 +160,6 @@
 
     &__price-value{
         font-size: 6rem;
-        font-weight: 100; //if the font-size is big, it's better to make it thin, decrease weight
+        font-weight: 100; //if the font-size is big, it's better to decrease weight
     }
 }
