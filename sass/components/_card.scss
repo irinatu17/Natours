@@ -12,7 +12,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        backface-visibility: hidden; //hides the backpart of element
+        -webkit-backface-visibility: hidden; //hides the backpart of element
+        backface-visibility: hidden; //hides the backpart of element      
         border-radius: $default-border-radius;
         overflow: hidden; //to hide overflowing images' corners
         box-shadow: $shadow-3 rgba($color-black, .15);
